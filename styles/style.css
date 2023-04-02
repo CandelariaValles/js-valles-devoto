@@ -1,0 +1,145 @@
+nav ul {
+  overflow: hidden;
+  list-style: none;
+  display: inline-block; }
+
+nav {
+  background-color: #333;
+  width: 100%;
+  text-align: center;
+  height: auto;
+  padding: 0%;
+  position: fixed; }
+
+header {
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #9fe79f; }
+
+.transparente {
+  opacity: 80%; }
+
+ul li {
+  display: inline-block; }
+
+li a {
+  text-align: center;
+  color: white;
+  display: inline;
+  padding: 16px 30px;
+  text-decoration: none;
+  background-color: #333; }
+
+li a:hover {
+  background-color: #9fe79f;
+  opacity: 50%; }
+
+.active {
+  color: #9fe79f; }
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: block;
+  flex-direction: column;
+  overflow: scroll;
+  margin: 0%;
+  color: black; }
+
+.full-width-image {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+  max-width: 100%;
+  height: auto;
+  padding-top: 3%; }
+
+@media screen and (max-width: 674px) {
+  .full-width-image {
+    padding: 3%; } }
+
+h3, h2 {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  background-color: #9fe79f;
+  text-align: center;
+ }
+
+h2 {
+  background-color: white; }
+
+p {
+  padding: 1%; }
+
+.principal {
+  padding-top: 3%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 12%; }
+
+.secundario {
+  padding: 2%;
+  margin: 0%; }
+
+input[type=text],
+input[type=number],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
+
+input[type=submit] {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  float: right;
+  border-radius: 16px; }
+
+input[type=submit]:hover {
+  background-color: #9fe79f;
+  color: white; }
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #333333bd;
+  width: 100%;
+  position: absolute; }
+
+footer a {
+  color: white !important; }
+
+section {
+  text-align: center; }
+
+.background-image {
+  background-image: url("../assets/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+@media screen and (max-width: 674px) {
+  .backgroung-responsive {
+    width: 1vh;
+    position: center; } }
+
+@media screen and (max-width: 560px) {
+  .logoImage {
+    width: 100%; } }

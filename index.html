@@ -1,13 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador</title>
+    <meta name="description" content="Il risparmio energetico in casa comporta dei vantaggi non solo per i consumi in bolletta, ma anche per l'ambiente. Contattaci per una consulenza gratuita con i nostri esperti! Rissol | Soluzioni per il risparmio energetico.">
+    <meta name="keywords" content="ENERGIA, RISPARMIO ENERGETICO, CONSUMO, CALDAIE, STUFE">
+    <title>Rissol | Caldaie</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script  defer src="./js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="icon" href="./assets/favicon.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Simulador</h1>
+    <header>
+        <a href="../index.html"><img class="logoImage" src="../assets/rissol (550 × 220 px).svg" alt="logo" /></a>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Caldaie</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Climatizzatori</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Stufe</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="index.html">Simulador</a>
+                </li>   
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Contatti</a>
+                </li>   
+            </ul>
+            </div>
+    </nav></header>
+    <h3>"Bienvenido a la calculadora de consumo energético de Rissol</h3>
+    <section class="principal">
+    <form>
+        <div class="form-group">
+            <label for="nombreCliente">Por favor ingrese nombre y apellido:</label>
+            <input type="text" class="form-control" id="nombreCliente" placeholder="nombre y apellido" required>
+        </div>
+            <label for="inputEmail">Ingrese su email:</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="nombre@ejemplo.com">
+        </div>
+        <div class="form-group">
+            <label for="metrosCuadrados">Ingrese cuantos metros cuadrados tiene su hogar:</label>
+            <input type="number" class="form-control" id="metrosCuadrados" placeholder="metros" required>
+        </div>
+        <div class="form-group">
+            <label for="alturaTecho">Ingrese la altura del techo en metros:</label>
+            <input type="number" class="form-control" id="alturaTecho" placeholder="metros" required>
+        </div>
+        <div class="form-group">
+            <label for="tipoCerramientos">Ingrese que tipo de cerramientos posee:</label>
+            <select class="form-control" id="tipoCerramientos" requiered>
+                <option>Madera</option>
+                <option>Aluminio</option>
+                <option>Pvc</option>
+            </select>
+        </div>
+        <input type="submit" value="Calcular consumo">
+        
+        
+
+
+        </section>
+    <footer>
+        <div class="container pt-4">
+            <section class="mb-4">
+                <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.facebook.com/"
+                ><img src="../assets/icons/facebook.svg"></img
+                ></a>
+                <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://twitter.com/"
+                ><img src="../assets/icons/twitter.svg"></img
+                ></a>
+                <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="http://youtube.com"
+                ><img src="../assets/icons/youtube.svg"></img
+                ></a>
+                <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="http://instagram.com/"
+                ><img src="../assets/icons/instagram.svg"></img
+                ></a>
+                <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://web.whatsapp.com/"
+                ><img src="../assets/icons/whatsapp.svg"></img
+                ></a>
+            </section>
+        </div>
+        <div class="secundario" >
+        © 2022 Copyright:
+        <a href="index.html">Rissol S.R.L</a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
 </body>
-<script src="./js/index.js"></script>
+
 </html>
